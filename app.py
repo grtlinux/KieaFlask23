@@ -16,7 +16,7 @@ def read(id):
     print('Read user with id: ' + id)
     return 'Read user with id: ' + id
 
-@app.route('/random')
+@app.route('/rand')
 def rand():
     '''Generate a random number between 1 and 10 '''
     random_number = random.randint(1, 1000)
