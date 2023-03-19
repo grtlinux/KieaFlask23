@@ -1,5 +1,8 @@
 # Kiea Flask 2023
 
+- [PyPi](https://pypi.org/)
+- [Flask 2.2.3](https://pypi.org/project/Flask/)
+
 - job
 ```
 $ pip install flask
