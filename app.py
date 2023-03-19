@@ -11,10 +11,11 @@ def hello():
 def create():
     return 'Create a new user'
 
-@app.route('/read/<id>')
+# @app.route('/read/<id>')  # id's type str
+@app.route('/read/<int:id>')  # id's type int
 def read(id):
-    print('Read user with id: ' + id)
-    return 'Read user with id: ' + id
+    print('Read user with id: ' + str(id))
+    return 'Read user with id: ' + str(id)
 
 @app.route('/rand')
 def rand():
