@@ -1,3 +1,8 @@
+#!/bin/python3 -v
+# -*- coding: utf-8 -*-
+# ----------------------------------------------------------------
+# app.py
+#
 from flask import Flask
 import random
 
@@ -5,15 +10,18 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
+    '''Return a friendly HTTP greeting.'''
     return 'Welcome to the Flask App!'
 
 @app.route('/create')
 def create():
+    '''Create a new user'''
     return 'Create a new user'
 
 # @app.route('/read/<id>')  # id's type str
 @app.route('/read/<int:id>')  # id's type int
 def read(id):
+    '''Read a user with the given id'''
     print('Read user with id: ' + str(id))
     return 'Read user with id: ' + str(id)
 
