@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     '''Return a friendly HTTP greeting.'''
-    return 'Welcome to the Flask App!'
+    return 'Welcome to the Flask App! 강석'
 
 @app.route('/create')
 def create():
@@ -32,4 +32,4 @@ def rand():
     return 'Random value: ' + str(random_number)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    app.run(host='0.0.0.0', debug=True, port=8080)
